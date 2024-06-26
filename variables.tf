@@ -20,8 +20,8 @@ variable "environment" {
   description = "Development environment"
 
   type = object({
-    name = string
-    cidr = string
+    name           = string
+    network_prefix = string
   })
   
   default = {
